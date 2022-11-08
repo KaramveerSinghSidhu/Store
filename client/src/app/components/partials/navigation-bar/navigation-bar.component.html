@@ -1,0 +1,36 @@
+<!-- Creating Navigation Bar
+
+  1. Link to main page via ICON/LOGO
+  2. Creating Nav Links
+    1. Login Button
+    2. Creating Hover Menu
+      1. Add Route to Dashboard
+      2. Add Route to Profile
+      3. Add Route to Orders
+      4. Logout Button
+    3. Cart Route with a banner of number of items in cart.
+-->
+
+<header>
+  <div class="container">
+    <a routerLink="/" class="logo">FoodMine!</a>
+    <nav>
+      <ul>
+        <li>
+          <a routerLink="/login">Login</a>
+        </li>
+        <li class="menu-container">
+          <a routerLink="/dashboard">Karamveer</a>
+          <div class="menu">
+            <a routerLink="/profile">Profile</a>
+            <a routerLink="/orders">Orders</a>
+            <a>Logout</a>
+          </div>
+        </li>
+        <li>
+          <a routerLink="/cart">Cart <span>3</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
